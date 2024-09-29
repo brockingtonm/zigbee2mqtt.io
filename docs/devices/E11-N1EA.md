@@ -34,6 +34,10 @@ Sengled bulbs are Zigbee [end devices](/advanced/zigbee/01_zigbee_network.html#e
 ## OTA updates
 This device supports OTA updates, for more information see [OTA updates](../guide/usage/ota_updates.md).
 
+## Inclusion and Reset
+This device is reset and put into inclusion mode by cycling the device power on 10 times.  The bulb will start blinking to signify that it has been reset and that it is in inclusion mode. 
+
+**NOTE**: If the device is still not recognized, cycle the device on 10 times, wait for the first blink, then cycle it again 10 times.  This has been know to resolve pairing issues in some cases.
 
 ## Options
 *[How to use device type specific configuration](../guide/configuration/devices-groups.md#specific-device-options)*
@@ -116,4 +120,6 @@ Value can be found in the published state on the `linkquality` property.
 It's not possible to read (`/get`) or write (`/set`) this value.
 The minimal value is `0` and the maximum value is `255`.
 The unit of this value is `lqi`.
+
+
 
